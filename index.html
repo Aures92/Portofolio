@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- importation bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="CSS/style.css" />
+
+    <!-- footer -->
+    <link rel="stylesheet" href="style.css">
+	
+    <!-- importation de style, icones... -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+    <title>Portofolio</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand text-uppercase fw-bold" href="#">
+            <span class="nom">Aurès Bilek </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav"> <!-- création de plusiseurs classes -->
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#accueil">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#apropos">A propos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projets">Projets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-- image -->
+    
+    <section class ="image profile" id = "accueil">
+        <img src = "IMG/PP.jpg" alt = "photo de profile" class="imgpp"/> <!-- importation de l'image enregistré dans le dossier-->
+    </section>
+  
+    <!-- caroussel  -->
+
+    <div class="slideshow-container" id = "apropos">
+
+        <!-- images qui prennent toute la largeur et le nombre de texte, 3 images -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="IMG/Slamdunk.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="IMG/basket.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="IMG/naruto.jpeg" style="width:100%">
+        </div>
+
+      <!-- projets -->
+
+      <section class = "projets-sections" id = projets>
+        <h1>Mes Projets</h1>
+        <div class="projets">
+            <div class="projet">  <!-- création de plusieurs div, texte, contenair, titre... -->
+                <h4>Création de bannières </h4>
+                <p class = "description">Je dois créer des visuels pour faire de la promotion</p>
+                <p class = "date">04 décembre 2022</p>
+            </div>
+            <div class="projet">
+                <h4>Plannifier les posts linkedin</h4>
+                <p class = "description">Tous les jours je dois poster sur linkedin.</p>
+                <p class = "date">04 décembre 2022</p>
+            </div>
+            <div class="projet">
+                <h4>Création de newsletters</h4>
+                <p class = "description">Grâce au logiciel Sendinblue je créee des newsletter.</p>
+                <p class = "date">21 avril 2000</p>
+            </div>
+            <div class="projet">
+                <h4>Mise à jour du site web</h4>
+                <p class = "description">J'effectue des mises à jour du site web pour </p>
+                <p class = "date">11 juillet 2002</p>
+            </div>
+            <div class="projet">
+                <h4>Organisation de webinar</h4>
+                <p class = "description">J'organise les webinar de A à Z.</p>
+                <p class = "date">24 mai 2020</p>
+            </div>
+            <div class="projet">
+                <h4>Organisation de webinar</h4>
+                <p class = "description">J'organise les webinar de A à Z.</p>
+                <p class = "date">24 mai 2020</p>
+            </div>
+        </div>
+      </section>
+
+      <!-- formulaire de contact -->
+
+      <h2>Formulaire de contact</h2>
+      <form name="myForm" action="/file.php" onsubmit="return validateForm()" method="post">
+         <table class="form-style" id="contact">
+            <tr>
+               <td>
+                  <label>
+                     Votre nom <span class="required">*</span> <!-- création de label pour chaque case du formulaire-->
+                  </label>
+               </td>
+               <td>
+                  <input type="text" name="name" class="long"/>
+                  <span class="error" id="errorname"></span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <label>
+                     Votre adresse e-mail <span class="required">*</span>
+                  </label>
+               </td>
+               <td>
+                  <input type="email" name="email" class="long"/>
+                  <span class="error" id="erroremail"></span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <label>
+                     Message <span class="required">*</span>
+                  </label>
+               </td>
+               <td>
+                  <textarea name="message" class="long field-textarea"></textarea> <!--message d'erreur-->
+                  <span class="error" id="errormsg"></span>
+               </td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>
+                  <input type="submit" value="Envoyer">      
+                  <input type="reset" value="Réinitialiser"> 
+               </td>
+            </tr>
+         </table>
+      </form>
+   
+      <!-- footer -->
+
+      <footer class="footer-distributed">
+
+        <div class="footer-left"> <!-- code du footer gauche-->
+      <img src="IMG/PP2.jpg">
+
+            <p class="footer-links">
+                <a href="#">Accueil</a>
+                |
+                <a href="#">A propos</a>
+                |
+                <a href="#">Projets</a>
+                |
+                <a href="#">Contact</a>
+            </p>
+
+            <p class="footer-company-name">© Aurès Portofolio</p>
+        </div>
+
+        <div class="footer-center"> <!-- footer centre-->
+            <div>
+                <i class="fa fa-map-marker"></i>
+                  <p><span>10 rue de naruto Paris</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>0606060606</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:aures92160@gmail.com">aures92160@gmail.com</a></p> <!-- lien mailto-->
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>Mes réseaux</span></p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook" ></i></a> <!-- lien réseau-->
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+<!-- lien avec la JS-->
+<script src="JAVA/index.js"></script>
+</body>
+</html>

@@ -32,3 +32,19 @@ JS -> Création d’une fonction pour avertir l’utilisateur des erreurs de sai
 
 HTML ->  Création de 3 classes, footer gauche, footer centtre et footer droit. -> Division du footer en 3 parties 
 CSS -> Code pour la responsivité du footer, importation de styles et d’icônes. Mise en forme du footer. 
+
+
+🚫 Difficultés 🚫
+
+- Mettre le site en full responsive
+- Importation sur github et faire un commit
+- Compréhension du Javascript
+
+✔️ Ce que j'ai appris ✔️
+
+- L'utilisation de github
+- Faire des commits
+- Créer un site responsive
+- Une première approche de Javascript
+- Complété mes compétences en HTML/CSS
+- Utilisation de Bootstrap

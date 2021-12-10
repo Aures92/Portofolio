@@ -1,7 +1,7 @@
 # Portofolio 
 
 Rappel du sujet 🔋 :
-Réaliser une page Web statique en HTML/CSS respectueuse des wireframes proposés1, s’adaptant aux différents supports (ordinateur, tablette et smartphone) et en conformité avec les standards du Web. 👍
+Réaliser une page Web statique en HTML/CSS respectueuse des wireframes proposés, s’adaptant aux différents supports (ordinateur, tablette et smartphone) et en conformité avec les standards du Web. 👍
 
 1️⃣ Head HTML
 Importation de bootstrap, lien avec le css et importation de styles et d’icones pour la mise en forme
